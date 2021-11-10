@@ -18,7 +18,7 @@ class FlightsController < ApplicationController
   # GET /flights/1/edit
   def edit
   end
-
+  #is it working
   # POST /flights or /flights.json
   def create
     @flight = Flight.new(flight_params)
