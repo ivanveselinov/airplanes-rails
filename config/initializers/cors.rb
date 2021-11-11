@@ -2,7 +2,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://burning-airlines.netlify.app'  # this needs to be an explicit list of URLS on Heroku
+    origins 'localhost:3000', 'localhost:3001', 'https://burning-airlines.netlify.app/*' # this needs to be an explicit list of URLS on Heroku
     resource '*',
       :headers => :any,
       :methods => %i( get post put patch delete options head )
